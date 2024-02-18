@@ -1,0 +1,26 @@
+<h1>ACTIVITY SEARCH</h1>
+<div class="search">
+    <span class="p-input-icon-right">
+        <input type="text" pInputText placeholder="Search">
+        <i class="topbar-icon pi pi-search"></i>
+    </span>
+</div>
+<a href="/activity-form"><p-button label="New Activity"></p-button></a>
+<div *ngFor="let activitat of activitats">
+    <a href="/activity-detail"><p-card class="card-act">
+        <div class="titulo-act">
+            {{activitat.titol}}
+        </div>
+        <div class = "img-act">
+            <img src="{{activitat.img}}">
+        </div>
+        
+        <div class="desc-act">
+            {{activitat.descripcio}}
+        </div>
+        
+        <div class="fecha-act">
+            {{activitat.data}}
+        </div>
+    </p-card></a>
+</div>

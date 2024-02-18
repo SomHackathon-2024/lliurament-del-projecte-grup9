@@ -1,0 +1,13 @@
+<div *ngFor="let new of news">
+    <p-card class="card-new">
+        <ng-template pTemplate="header">
+            <img src="{{new.img}}">
+        </ng-template>
+        <div class="title-new">
+            {{new.title}} [{{new.date}}]
+        </div>
+        <div class="desc-new">
+            {{new.description}}
+        </div>
+    </p-card>
+</div>

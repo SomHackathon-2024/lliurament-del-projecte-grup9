@@ -1,0 +1,32 @@
+.desc-act1{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    padding: 4px;
+    border: 2px solid #ff911b;
+    border-radius: 10px;
+    width: 50%;
+
+}
+div.img-act1{
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+div.bandera{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+
+.bandera img{
+    height: auto;
+    width: 40%;
+    margin-bottom: 8%;
+}
+
+.img-act1 img{
+    height: auto;
+    width: 40%;
+    margin-bottom: 8%;
+}

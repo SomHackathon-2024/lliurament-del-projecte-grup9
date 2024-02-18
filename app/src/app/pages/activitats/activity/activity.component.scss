@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card-act{
+    padding: 3%;
+}
+
+.img-act img{
+    margin-top: 10px;
+    float: right;
+    height: 60px;
+    width: 80px;
+}
+
+.titulo-act{
+
+    padding: 1%;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #c67a00bb;
+    border-radius: 10px;
+
+}
+.desc-act{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
+    height: auto;
+    padding: 1%;
+    border: 2px solid #00000041;
+    border-radius: 10px;
+}
+.fecha-act{
+    padding: 1%;
+    border: 2px solid #00000041;
+    border-radius: 10px;
+}

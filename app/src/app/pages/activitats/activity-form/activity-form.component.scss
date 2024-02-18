@@ -1,0 +1,11 @@
+@media screen and (min-width: 750px) {
+    .file1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .file2 {
+        display: none;
+    }
+}

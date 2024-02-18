@@ -1,0 +1,58 @@
+<div>
+    <form  class="flex flex-column" >
+        <div class="p-fluid p-formgrid">
+          <div class="grid">
+            <div class="field col-12 md:col-6">
+              <label>Activity Photografy</label><br>
+              <img src="assets/img/fotoafegirfoto.png" width="150px">
+              <p-fileUpload class="file1" mode="basic" chooseLabel="Choose" name="demo[]"  accept="image/*"></p-fileUpload>
+            </div>
+            <div class="field col-12 md:col-6" style="margin-top: 50px;">
+              <label>Activity Name</label>
+              <input pInputText type="text">
+              <small class="p-error">* Obligatory</small>
+            </div>
+            <div class="field col-12 md:col-6">
+                <p-fileUpload class="file2" mode="basic" chooseLabel="Choose" name="demo[]"  accept="image/*"></p-fileUpload>
+              </div>
+              <div class="field col-12 md:col-6 lang" style="margin-top: -25px;">
+                <label>Language</label>
+                <p-dropdown [options]="idiomas" [(ngModel)]="idiomas" optionLabel="name" [filter]="true" filterBy="name" [showClear]="true" placeholder="Select a Language">
+                  <ng-template pTemplate="selectedItem">
+                      <div class="flex align-items-center gap-2" *ngIf="idiomas">
+                          <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + idiomas[0].code.toLowerCase()" style="width: 18px"/>
+                          <div>{{ idiomas[0].name }}</div>
+                      </div>
+                  </ng-template>
+                  <ng-template let-idiomas pTemplate="item">
+                      <div class="flex align-items-center gap-2">
+                          <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + idiomas.code.toLowerCase()" style="width: 18px"/>
+                          <div>{{ idiomas.name }}</div>
+                      </div>
+                  </ng-template>
+              </p-dropdown>
+              </div>
+            <div class="field col-12 md:col-12">
+              <label>Description</label>
+              <textarea pInputTextarea></textarea>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="field col-12 md:col-6">
+              <label>Hour</label>
+              <input pInputText type="text">
+            </div>
+            <div class="field col-12 md:col-6">
+              <label>Day</label>
+              <input pInputText type="text">
+            </div>
+            <div class="field col-12 md:col-6">
+              <label>Duration</label>
+              <input pInputText type="text">
+            </div>
+          </div>
+        </div>
+      </form>
+    <p-button label="Save" icon="pi pi-check"></p-button>
+    <p-button label="Cancel" icon="pi pi-times" styleClass="p-button-secondary" [style]="{ 'margin-left': '.5em' }"></p-button>
+</div>

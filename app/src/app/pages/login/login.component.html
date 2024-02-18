@@ -1,0 +1,25 @@
+<div class="login-body">
+    <div class="login-panel p-fluid">
+        <div class="grid grid-nogutter">
+            <div class="col-12 login-header">
+                <h1>ACTIVYTRIP</h1>
+                <h2>Login</h2>
+                <img src="assets/img/logo.png" style="width: 55px;">
+            </div>
+            <div class="col-12">
+                <label for="username">Username</label>
+                <input pInputText id="username" type="text"/>
+            </div>
+            <div class="col-12">
+                <label for="password">Password</label>
+                <p-password id="password" [toggleMask]="true"></p-password>
+            </div>
+            <div class="col-12">
+                <small>You have user? <a href="/register" style="text-decoration: underline;">Register</a></small>
+            </div>
+            <div class="col-12 button-container">
+                <a href="/"><button pButton type="button" label="Entrar" icon="pi pi-unlock" (click)="login()"></button></a>
+            </div>
+        </div>
+    </div>
+</div>
